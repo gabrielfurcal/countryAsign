@@ -1,7 +1,7 @@
 # countryAsign
 This project is a test of knowledge where you have to create an application where you can asign to the people the country they belong.
 
-# Strucute
+# Structure
 This project is a MVC application with Laravel, a PHP framework and MySQL.
 
 # Requeriments
