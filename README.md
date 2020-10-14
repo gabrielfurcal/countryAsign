@@ -10,7 +10,7 @@ You need to create a first CRUD where you can add a country. Every country that 
 Next, you need to create another CRUD where you can add a person with a  name, last name, age, sex, email and select the country where belongs. Every person that you create must be listed in a view table where you can see her full name (name + last name), email and country, also with the option to edit and delete her. This table must have a search field where you can filter the table by the full name of the person. 
 
 # Notes
-The edit screen of every CRUD must let you edit the same fields than create screen.
+The edit screen of every CRUD must let you edit the same fields than create screen have.
 
 You must upload a .sql file whit the DDL script.
 
