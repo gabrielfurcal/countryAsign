@@ -1,0 +1,62 @@
+.table_datatable_button th {
+    background: #40739e;
+    color: #ffffff;
+}
+
+.table_datatable_button .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.table_datatable_button .clear {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 730px)
+{
+
+    /*Parte superior donde irian 1) La cantidad de articulos a mostrar, 2) Los botones, 3) El filtro de busqueda*/
+    .table_datatable_button .top {
+        display: grid;
+        grid-template-columns: 90% 40px;
+        justify-content: center;
+    }
+
+    .table_datatable_button .top .dataTables_length {
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .table_datatable_button .top .dataTables_filter {
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .table_datatable_button .top .dt-buttons {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .table_datatable_button .top .dt-buttons button {
+        margin-bottom: 5px;
+    }
+
+    .table_datatable_button .top .dt-buttons button:last-child {
+        margin-bottom: 0px;
+    }
+
+    /*Parte inferior donde irian 1) La información extra, 2) Los botones de paginación*/
+    .table_datatable_button .clear {
+        display: grid;
+        row-gap: 5px;
+        justify-content:  center;
+    }
+}

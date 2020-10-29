@@ -1,0 +1,26 @@
+#contTablePeople {
+  margin-top: 50px;
+  border: dotted;
+  padding: 10px;
+}
+
+.datatable_btn_accions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.datatable_btn_accions button {
+  margin-right: 2%;
+}
+
+.datatable_btn_accions button:last-child {
+  margin-left: 0;
+}
+
+.contSearch {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rosybrown;
+}

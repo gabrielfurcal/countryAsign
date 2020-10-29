@@ -1,0 +1,140 @@
+/*Configurar los botones principales del sistema*/
+:root {
+    --mainBtnColorContent: #ecf0f1;
+}
+
+.main_btns {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 0px;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+}
+
+.main_btns button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_btns button:last-child {
+    margin-right: 0;
+}
+
+.main_btns button#btn_previous::before {
+    font-family: FontAwesome;
+    content: '\f060';
+    font-size: 35px;
+    color: var(--mainBtnColorContent);
+}
+
+.main_btns button#btn_next::before {
+    font-family: FontAwesome;
+    content: '\f061';
+    font-size: 35px;
+    color: var(--mainBtnColorContent);
+}
+
+.main_btns button#btn_edit::before {
+    font-family: FontAwesome;
+    content: '\f304';
+    font-size: 30px;
+    color: var(--mainBtnColorContent);
+}
+
+.main_btns button#btn_new::before {
+    font-family: FontAwesome;
+    content: '\f067';
+    font-size: 35px;
+    color: var(--mainBtnColorContent);
+}
+
+.main_btns button#btn_cancel::before {
+    font-family: FontAwesome;
+    content: '\f00d';
+    font-size: 35px;
+    color: var(--mainBtnColorContent);
+}
+
+.main_btns button#btn_save::before {
+    font-family: FontAwesome;
+    content: '\f0c7';
+    font-size: 35px;
+    color: var(--mainBtnColorContent);
+}
+
+.main_btns button.disable {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.disableDiv {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+/*Configurar boton busqueda del sistema*/
+.search_cont
+{
+    position: relative;
+}
+
+input.search{
+    width: 100%;
+    padding: 5px 35px 6px 10px;
+}
+
+.search_cont .search_icon {
+    cursor: pointer;
+}
+
+.search_cont .search_icon::before {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-family: FontAwesome;
+    content: '\f002';
+    font-size: 20px;
+    color: #ADB5BD;
+    cursor: pointer;
+}
+
+.search_cont .search_icon:hover::before {
+    color: #75B5EC;
+}
+
+.search_cont input.search[type="text"]:read-only + .search_icon::before {
+    pointer-events: none;
+}
+
+.search_cont .search_icon.load::before {
+    content: ' ';
+    top: 8px;
+    border: 5px solid #dfe6e9; /* Light grey */
+    border-top: 5px solid #006BDD; /* Blue */
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/*Poner invisible el label para rellenar espacio de los input secundarios a los campos busqueda*/
+.input_secondary label{
+    visibility: hidden;
+}
